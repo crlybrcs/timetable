@@ -5,7 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cy:open": "cypress open",
+    "dev": "start-test 19002 cy:open"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.13.0",
@@ -33,9 +35,11 @@
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "babel-preset-expo": "8.3.0",
+    "cypress": "^8.3.1",
     "husky": "^6.0.0",
     "prettier": "^2.3.0",
-    "pretty-quick": "^3.1.0"
+    "pretty-quick": "^3.1.0",
+    "start-server-and-test": "^1.14.0"
   },
   "prettier": {
     "singleQuote": true,
